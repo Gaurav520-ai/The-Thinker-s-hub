@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attendance System - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="main-navbar">
+            <div class="nav-brand">Attendance System</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="student-dashboard.html">Student Dashboard</a>
+                <a href="Admin.html">Faculty Dashboard</a>
+                <a href="Admin.html">Admin Dashboard</a>
+                <a href="#login-section">Login</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section">
+            <h1>Automated Student Attendance Monitoring & Analytics</h1>
+            <p>Modern, secure, and efficient attendance management for colleges.<br>
+            Powered by <strong>The Thinker's Hub</strong>.</p>
+            <div class="hero-actions">
+                <a href="#login-section" class="hero-btn">Get Started</a>
+            </div>
+        </section>
+        <section class="features-section">
+            <h2>Key Features</h2>
+            <ul class="features-list">
+                <li>QR Code-based Attendance</li>
+                <li>Real-time Analytics & Reports</li>
+                <li>Role-based Dashboards</li>
+                <li>Export to CSV/PDF</li>
+                <li>Secure & User-friendly</li>
+            </ul>
+        </section>
+        <section class="login-section" id="login-section">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="role">Role:</label>
+                <select id="role" name="role" required>
+                    <option value="student">Student</option>
+                    <option value="faculty">Faculty</option>
+                    <option value="admin">Admin</option>
+                </select>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <div id="login-message"></div>
+        </section>
+    </main>
+    <footer style="text-align:center; margin-top:2em; color:#0077b6; font-weight:500;">
+        &copy; 2025 The Thinker's Hub
+    </footer>
+</body>
